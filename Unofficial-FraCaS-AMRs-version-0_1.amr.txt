@@ -7608,16 +7608,6 @@
             :name (n / name :op1 "Smith"))
       :ARG1 (t / temper))
 
-# ::id fracas-276.premise_0 ::date 2017-03-08T23:09:30
-# ::snt When they opened the M25, traffic increased.
-# ::user timjogorman
-(i2 / increase-01
-      :ARG1 (t / traffic)
-      :time (o / open-01
-            :ARG0 (t3 / they)
-            :ARG1 (t2 / thing :wiki "M25_motorway"
-                  :name (n / name :op1 "M25"))))
-
 # ::id fracas-277.premise_0 ::date 2017-03-08T23:09:30
 # ::snt Smith lived in Birmingham in 1991.
 # ::user timjogorman
@@ -8212,16 +8202,6 @@
             :name (n / name :op1 "Smith"))
       :ARG1 (r / report))
 
-# ::id fracas-305.premise_0 ::date 2017-03-08T23:09:30
-# ::snt Smith discovered a new species for an hour.
-# ::user timjogorman
-(d / discover-01
-      :ARG0 (p / person :wiki - :name (n / name :op1 "Smith"))
-      :ARG1 (s / species
-            :ARG1-of (n2 / new-02))
-      :duration (t / temporal-quantity :quant 1
-            :unit (h / hour)))
-
 # ::id fracas-306.premise_0 ::date 2017-03-08T23:09:30
 # ::snt Smith discovered new species for two years.
 # ::user timjogorman
@@ -8287,49 +8267,6 @@
                   :name (n / name :op1 "Smith"))
             :frequency (w2 / week
                   :mod (e / every))))
-
-# ::id fracas-309.premise_0 ::date 2017-03-08T23:09:30
-# ::snt Smith left the house at a quarter past five.
-# ::user timjogorman
-(l / leave-11
-      :ARG0 (p / person :wiki -
-            :name (n / name :op1 "Smith"))
-      :ARG1 (h / house)
-      :time (d / date-entity :time "5:15"))
-
-# ::id fracas-309.premise_1 ::date 2017-03-08T23:09:30
-# ::snt She took a taxi to the station and caught the first train to Luxembourg.
-# ::user timjogorman
-(a / and
-      :op1 (t / take-01
-            :ARG0 (s / she)
-            :ARG1 (t2 / taxi)
-            :ARG3 (s2 / station))
-      :op2 (c / catch-01
-            :ARG0 s
-            :ARG1 (t3 / train
-                  :time (f / first)
-                  :destination (c2 / country :wiki "Luxembourg"
-                        :name (n / name :op1 "Luxembourg")))))
-
-# ::id fracas-310.premise_0 ::date 2017-03-08T23:09:30
-# ::snt Smith lost some files.
-# ::user timjogorman
-(l / lose-02
-      :ARG0 (p / person :wiki -
-            :name (n / name :op1 "Smith"))
-      :ARG1 (f / file
-            :mod (s / some)))
-
-# ::id fracas-310.premise_1 ::date 2017-03-08T23:09:30
-# ::snt They were destroyed when her hard disk crashed.
-# ::user timjogorman
-(d / destroy-01
-      :ARG1 (t / they)
-      :time (c / crash-01
-            :ARG1 (d2 / disk
-                  :mod (h / hard)
-                  :poss (s / she))))
 
 # ::id fracas-311.premise_0 ::date 2017-03-08T23:09:30
 # ::snt Smith had left the house at a quarter past five.
